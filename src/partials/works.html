@@ -1,0 +1,11 @@
+<div class="row small-up-1 medium-up-2 large-up-3">
+	{{#each works.works}}
+		<div class="column">
+			<div class="work">
+				<a data-open="{{identifier}}">
+					<img src="{{root}}/assets/img/works/{{identifier}}--thumb.png" alt="{{title}}" class="work__image" /><br />
+				</a>
+			</div>
+		</div>
+	{{/each}}
+</div>

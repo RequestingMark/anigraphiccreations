@@ -1,0 +1,61 @@
+works:
+  -
+    identifier: shsu-homecoming-2016
+    title: SHSU Homecoming
+    modal-slides:
+      -
+        image-url: shsu-homecoming-2016
+        image-alt: Test Alt One
+    modal-link: http://www.shsu.edu/homecoming/
+    modal-year: 2016
+    modal-text: I served on the homecoming committee and was tasked with making a website for 2016 SHSU Homecoming. The theme was Bearkat Heroes so I went with a comic style layout. This site is built with Foundation for Sites framework.
+  -
+    identifier: shsu-mass-email
+    title: SHSU Email Template
+    modal-slides:
+      -
+        image-url: shsu-mass-email
+        image-alt: Test Alt One
+    modal-link: http://www.shsu.edu/homecoming/
+    modal-year: 2016
+    modal-text: Email template created to send out on and off-campus mass emails. This template is still used to this day.
+  -
+    identifier: hospitality-house
+    title: Hospitality House
+    modal-slides:
+      -
+        image-url: hospitality-house
+        image-alt: Test Alt One
+    modal-link: http://www.hospitalityhouse.org/
+    modal-year: 2014
+    modal-text: Launched this updated Hospitality House website in June 2014 as a volunteer and keep it updated to this day on a volunteer basis.
+  -
+    identifier: shsu-kappa-sigma
+    title: SHSU Kappa Sigma
+    modal-slides:
+      -
+        image-url: shsu-kappa-sigma
+        image-alt: Test Alt One
+    modal-link: http://www.shsukappasigma.com/
+    modal-year: 2013
+    modal-text: Created this website for the Kappa Sigma Fraternity at Sam Houston State University when I joined. This site uses the Bootstrap framework and php to bring in repeatable content.
+  -
+    identifier: etsy-shop-plugin
+    title: Simply Etsy
+    modal-slides:
+      -
+        image-url: etsy-shop-plugin
+        image-alt: Test Alt One
+    modal-link: http://www.anigraphiccreations.com/simply-etsy/
+    modal-year: 2015
+    modal-text: I wanted a nice responsive way to embed an etsy shops listings on a webpage that I could create custom styles for so I created this plugin to do just that. I also converted this to a wordpress plugin with the ability to place an etsy shop's listings on your blog/site using shortcodes.
+  -
+    identifier: gregarious-art
+    title: GregariousArt
+    modal-slides:
+      -
+        image-url: gregarious-art
+        image-alt: Test Alt One
+    modal-link: http://www.gregariousart.com/
+    modal-year: 2017
+    modal-text: Made for an artist.

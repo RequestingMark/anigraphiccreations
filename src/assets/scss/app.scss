@@ -1,0 +1,313 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 3rem
+}
+
+.menu__link {
+	flex-grow: 1;
+	position: relative;
+	width: 100%;
+  color: #333;
+  text-align: center;
+  background: $white;
+
+  &:focus {
+  	color: #333
+  }
+  
+  &:hover {
+  	color: $primary-color
+  }
+
+  &:visited {
+  	color:#333
+  }
+
+  &.active,
+  &.active:focus, {
+    background: #333;
+    color: #fff
+  }
+}
+
+.menu__span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.main {
+	padding-right: 48px;
+}
+
+.page {
+  position: relative;
+	min-height: 100vh;
+	padding: 0 1rem 2rem;
+}
+
+.page__content--center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+
+  span {
+    color: $primary-color
+  }
+}
+
+/**********************************************************\
+* About
+\**********************************************************/
+
+.about {
+  transition: all .5s ease;
+}
+
+.about--active {
+  top: 25%;
+}
+
+.about-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-menu__item {
+  position: absolute;
+  transition: all .5s ease;
+}
+
+.about-menu__item--top {
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about--active .about-menu__item--top {
+  top: -50%;
+}
+
+.about-menu__item--right {
+  top: 50%;
+  left: 100%;
+  transform: translateX(100%) translateY(-50%);
+}
+
+.about-menu__item--left {
+  left: -100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-menu__item--bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-menu__button {
+  border: 1px solid $primary-color;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+}
+
+/**********************************************************\
+* Works
+\**********************************************************/
+
+.work {
+  padding: 1rem 0;
+}
+
+/**********************************************************\
+* Footer
+\**********************************************************/
+
+.social-links {
+  text-align: center;
+}
+
+.social-link {
+  margin: 0 1rem;
+  font-size: 4rem;
+}
+
+.email-link {
+  font-size: 1.5rem;
+}
+
+/**********************************************************\
+* Contact Form
+\**********************************************************/
+
+.contact-information__link {
+  color: #333;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-form__error-message {
+  color: #f00;
+}
+
+.contact-form__input {
+  position: relative;
+  margin: .5rem 0;
+  overflow: hidden;
+}
+
+.contact-form__input--textarea {
+  height: 5rem;
+}
+
+.contact-form__field {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: .5rem;
+  font-size: 1rem;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.contact-form__field:focus,
+.contact-form__field--filled {
+  outline: 0;
+  margin-right: -20px;
+  padding-right: 1rem;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -webkit-transition-delay: 0.06s;
+  transition-delay: 0.06s;
+}
+
+.contact-form__label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: .5rem;
+  color: $black;
+  text-align: left;
+  background: $light-gray;
+  cursor: text;
+  z-index: 10;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.contact-form__field:focus + .contact-form__label,
+.contact-form__field--filled + .contact-form__label  {
+  -webkit-transform: translate3d(60%, 0, 0);
+  transform: translate3d(60%, 0, 0);
+  pointer-events: none;
+}
+
+.contact-form__submit {
+  width: 100%;
+  border: 0;
+  margin: .5rem 0 0;
+  padding: 1rem;
+  color: $light-gray;
+  font-weight: bold;
+  cursor: pointer;
+  background: $primary-color;
+}
+
+.contact-form__submit:active,
+.contact-form__submit:hover:focus,
+.contact-form__submit:hover {
+  color: $light-gray;
+}
+
+/**********************************************************\
+* Footer
+\**********************************************************/
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer__content {
+  margin: 0;
+  padding: 0;
+}
