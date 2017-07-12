@@ -50,6 +50,40 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+* {
+  outline-color: $primary-color;
+  -webkit-tap-highlight-color: $primary-color;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $primary-color
+}
+
+::selection {
+  color: $white;
+  background: $primary-color
+}
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: .5rem 1rem;
+  outline-color: $white;
+  color: $white;
+  font-weight: bold;
+  background-color: $primary-color;
+  z-index: 100;
+  transition: top 1s
+}
+
+.skip-link:focus {
+  top: 0;
+  color: $white;
+  outline-color:$white;
+}
+
 .menu {
 	display: flex;
 	flex-direction: column;
@@ -91,17 +125,17 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg)
 }
 
 .main {
-	padding-right: 48px;
+	padding-right: 48px
 }
 
 .page {
   position: relative;
 	min-height: 100vh;
-	padding: 0 1rem 2rem;
+	padding: 0 1rem 2rem
 }
 
 .page__content--center {
@@ -121,11 +155,11 @@
 \**********************************************************/
 
 .about {
-  transition: all .5s ease;
+  transition: all .5s ease
 }
 
 .about--active {
-  top: 25%;
+  top: 25%
 }
 
 .about-menu {
@@ -133,46 +167,46 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 
 .about-menu__item {
   position: absolute;
-  transition: all .5s ease;
+  transition: all .5s ease
 }
 
 .about-menu__item--top {
   top: -100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 
 .about--active .about-menu__item--top {
-  top: -50%;
+  top: -50%
 }
 
 .about-menu__item--right {
   top: 50%;
   left: 100%;
-  transform: translateX(100%) translateY(-50%);
+  transform: translateX(100%) translateY(-50%)
 }
 
 .about-menu__item--left {
   left: -100%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%)
 }
 
 .about-menu__item--bottom {
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 
 .about-menu__button {
   border: 1px solid $primary-color;
   padding: .5rem 1rem;
-  font-size: 2rem;
+  font-size: 2rem
 }
 
 /**********************************************************\
@@ -180,7 +214,7 @@
 \**********************************************************/
 
 .work {
-  padding: 1rem 0;
+  padding: 1rem 0
 }
 
 /**********************************************************\
@@ -188,16 +222,16 @@
 \**********************************************************/
 
 .social-links {
-  text-align: center;
+  text-align: center
 }
 
 .social-link {
   margin: 0 1rem;
-  font-size: 4rem;
+  font-size: 4rem
 }
 
 .email-link {
-  font-size: 1.5rem;
+  font-size: 1.5rem
 }
 
 /**********************************************************\
@@ -205,97 +239,7 @@
 \**********************************************************/
 
 .contact-information__link {
-  color: #333;
-}
-
-.contact-form {
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-}
-
-.contact-form__error-message {
-  color: #f00;
-}
-
-.contact-form__input {
-  position: relative;
-  margin: .5rem 0;
-  overflow: hidden;
-}
-
-.contact-form__input--textarea {
-  height: 5rem;
-}
-
-.contact-form__field {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  width: 60%;
-  height: 100%;
-  margin: 0;
-  border: 0;
-  padding: .5rem;
-  font-size: 1rem;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-.contact-form__field:focus,
-.contact-form__field--filled {
-  outline: 0;
-  margin-right: -20px;
-  padding-right: 1rem;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-  -webkit-transition-delay: 0.06s;
-  transition-delay: 0.06s;
-}
-
-.contact-form__label {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: .5rem;
-  color: $black;
-  text-align: left;
-  background: $light-gray;
-  cursor: text;
-  z-index: 10;
-  -webkit-transform-origin: 0% 50%;
-  transform-origin: 0% 50%;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-.contact-form__field:focus + .contact-form__label,
-.contact-form__field--filled + .contact-form__label  {
-  -webkit-transform: translate3d(60%, 0, 0);
-  transform: translate3d(60%, 0, 0);
-  pointer-events: none;
-}
-
-.contact-form__submit {
-  width: 100%;
-  border: 0;
-  margin: .5rem 0 0;
-  padding: 1rem;
-  color: $light-gray;
-  font-weight: bold;
-  cursor: pointer;
-  background: $primary-color;
-}
-
-.contact-form__submit:active,
-.contact-form__submit:hover:focus,
-.contact-form__submit:hover {
-  color: $light-gray;
+  color: #333
 }
 
 /**********************************************************\
@@ -304,10 +248,10 @@
 
 .footer {
   padding: 1rem;
-  text-align: center;
+  text-align: center
 }
 
 .footer__content {
   margin: 0;
-  padding: 0;
+  padding: 0
 }

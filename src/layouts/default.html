@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
     {{#ifpage 'index'}}
       {{> menu}}
     {{/ifpage}}
-    <main class="main">
+    <main id="main-content" class="main">
       {{> body}}
       {{> footer}}
     </main>
