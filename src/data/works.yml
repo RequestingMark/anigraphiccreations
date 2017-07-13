@@ -1,5 +1,33 @@
 works:
   -
+    identifier: resourcefulrevenue
+    title: ResourcefulRevenue
+    modal-active-slide:
+        -
+            image-url: resourcefulrevenue
+            image-alt: ResourcefulRevenue Website Screenshot
+    modal-slides:
+      -
+        image-url: resourcefulrevenue
+        image-alt: ResourcefulRevenue Website Screenshot
+    modal-link: http://www.resourcefulrevenue.com/
+    modal-year: 2017
+    modal-text: ResourcefulRevenue Website
+  -
+    identifier: holyshipmcmurrays
+    title: HolyShipMcMurrays
+    modal-active-slide:
+        -
+            image-url: holyshipmcmurrays
+            image-alt: HolyShipMcMurrays Website Screenshot
+    modal-slides:
+      -
+        image-url: holyshipmcmurrays
+        image-alt: HolyShipMcMurrays Website Screenshot
+    modal-link: http://www.holyshipmcmurrays.com/
+    modal-year: 2017
+    modal-text: This website was created for the wedding of Mark McMurray and Jamie Bozarth which will be held on October 13, 2017.
+  -
     identifier: mysam-portal
     title: MySam Portal
     modal-active-slide:
@@ -14,15 +42,15 @@ works:
     modal-year: 2017
     modal-text: The old MySam Portal is getting retired so I was tasked with creating a new portal for SHSU Faculty, Staff, and Students to use hosted in the SHSU DotCMS.
   -
-    identifier: shsu-homecoming-2016
+    identifier: shsuhomecoming2016
     title: SHSU Homecoming
     modal-active-slide:
         -
-            image-url: shsu-homecoming-2016
+            image-url: shsuhomecoming2016
             image-alt: SHSU Homecoming 2016 Website Screenshot
     modal-slides:
       -
-        image-url: shsu-homecoming-2016
+        image-url: shsuhomecoming2016
         image-alt: SHSU Homecoming 2016 Website Screenshot
     modal-link: http://www.shsu.edu/homecoming/
     modal-year: 2016
@@ -42,29 +70,29 @@ works:
     modal-year: 2016
     modal-text: Email template created to send out on and off-campus mass emails. This template is still used to this day.
   -
-    identifier: hospitality-house
-    title: Hospitality House
+    identifier: thehospitalityhouse
+    title: The Hospitality House
     modal-active-slide:
         -
-          image-url: hospitality-house
+          image-url: thehospitalityhouse
           image-alt: The Hospitality House Website Screenshot
     modal-slides:
       -
-        image-url: hospitality-house
+        image-url: thehospitalityhouse
         image-alt: The Hospitality House Website Screenshot
-    modal-link: http://www.hospitalityhouse.org/
+    modal-link: http://www.thehospitalityhouse.org/
     modal-year: 2014
     modal-text: Launched this updated Hospitality House website in June 2014 as a volunteer and keep it updated to this day on a volunteer basis.
   -
-    identifier: shsu-kappa-sigma
+    identifier: shsukappasigma
     title: SHSU Kappa Sigma
     modal-active-slide:
         -
-            image-url: shsu-kappa-sigma
+            image-url: shsukappasigma
             image-alt: SHSU Kappa Sigma Website Screenshot
     modal-slides:
       -
-        image-url: shsu-kappa-sigma
+        image-url: shsukappasigma
         image-alt: SHSU Kappa Sigma Website Screenshot
     modal-link: http://www.shsukappasigma.com/
     modal-year: 2013
@@ -84,15 +112,15 @@ works:
     modal-year: 2015
     modal-text: I wanted a nice responsive way to embed an etsy shops listings on a webpage that I could create custom styles for so I created this plugin to do just that. I also converted this to a wordpress plugin with the ability to place an etsy shop's listings on your blog/site using shortcodes.
   -
-    identifier: gregarious-art
+    identifier: gregariousart
     title: GregariousArt
     modal-active-slide:
         -
-            image-url: gregarious-art
+            image-url: gregariousart
             image-alt: Gregarious Art Website Screenshot
     modal-slides:
       -
-        image-url: gregarious-art
+        image-url: gregariousart
         image-alt: Gregarious Art Website Screenshot
     modal-link: http://www.gregariousart.com/
     modal-year: 2017
